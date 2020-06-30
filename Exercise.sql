@@ -30,7 +30,7 @@ FROM employees;
 SELECT LENGTH(first_name)
 FROM employees;
 
-SELECT LENGTH(TRIM('    HELLO THERE.   '));
+SELECT LENGTH(TRIM('    HELLO THERE.   ')); -- trim words
 
 SELECT first_name || ' ' || last_name AS full_name, (salary> 100000) AS is_highly_paid 
 FROM employees
